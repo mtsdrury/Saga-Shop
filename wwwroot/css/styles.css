@@ -1,0 +1,131 @@
+body {
+    background-color: #8080ff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #c2d1f0;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 72px;
+    margin: 0;
+    font-weight: bold;
+    font-family: fantasy, cursive;
+    text-align: center;
+    flex-grow: 1;
+    letter-spacing: 6px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.blurb {
+    font-family: system-ui;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+    .blurb::before,
+    .blurb::after {
+        content: "[";
+        color: black;
+        font-size: 24px;
+        position: absolute;
+        top: 0;
+        left: -10px;
+    }
+
+    .blurb::after {
+        content: "]";
+        right: -10px;
+        left: unset;
+    }
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.icon-bar {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+    .menu.show-menu {
+        display: block;
+    }
+
+    .menu li {
+        margin-right: 10px;
+    }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+            .menu li a:hover {
+                color: #0077b3;
+            }
+
+.submenu {
+    display: none;
+    background-color: #0099cc;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+    .submenu li {
+        margin-bottom: 5px;
+        list-style-type: none; /* Remove the bullet points */
+    }
+
+    .submenu a {
+        color: white;
+        display: block;
+    }
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu-wrapper {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Position the submenu wrapper to the right of the submenu */
+  margin-left: 5px; /* Adjust the margin to create spacing between the submenu and submenu wrapper */
+}
+
+.submenu {
+  display: none;
+  background-color: #0099cc;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+

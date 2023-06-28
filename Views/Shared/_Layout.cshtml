@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Saga Shop</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <h1 class="logo">Saga</h1>
+        <div class="blurb">[Shop your wildest dreams and find your lost saga.]</div>
+        <nav class="menu-icon">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </nav>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li>
+                <a href="/Shop">Shop</a>
+                <div class="submenu-wrapper">
+                    <ul class="submenu">
+                        <li><a href="/Shop/Womens">Women's Styles</a></li>
+                        <li><a href="/Shop/Mens">Men's Styles</a></li>
+                        <li><a href="/Shop/Accessories">Accessories</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="/Cart">Cart</a></li>
+        </ul>
+    </header>
+
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
